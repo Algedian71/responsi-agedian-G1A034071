@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsi Pweb - Diggin' Your Persona</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="main-container">
+        <section class="glass-card finder-section">
+            <h2 class="section-title"><i class="fas fa-search-nodes"></i> Find Your Inner Rockstar</h2>
+            <form id="personaForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="inputNama" placeholder="What's your name?" required>
+                </div>
+                <div class="input-group">
+    <label>Main Hobby</label>
+    <select id="inputHobi">
+        <option value="coding">Software Development</option>
+        <option value="music">Music & Britpop</option>
+        <option value="gaming">E-Sports & Gaming</option>
+        <option value="design">Graphic Design / UI/UX</option>
+        <option value="photography">Cinematic Photography</option>
+        <option value="cyber">Cyber Security / Hacking</option>
+        <option value="business">Entrepreneurship</option>
+        <option value="content">Content Creating</option>
+        <option value="writing">Technical Writing</option>
+    </select>
+</div>
+                <div class="input-group">
+                    <label>Lucky Number (1-10)</label>
+                    <input type="number" id="inputAngka" min="1" max="10" required>
+                </div>
+                <button type="submit" class="btn-primary">Find My Persona</button>
+            </form>
+
+            <div id="resultDisplay" class="result-container hidden">
+                <p>You're a proper...</p>
+                <h3 id="personaResult">Mad Fer It Rockstar</h3>
+            </div>
+        </section>
+
+        <section class="glass-card profile-section">
+            <div class="profile-header">
+                <div class="avatar-wrapper">
+                    <img src="profile-picture.png" alt="Profile Picture" class="profile-img">
+                </div>
+                <h2 class="profile-name">Algedian Syahtria Wangsa</h2>
+                <p class="profile-tagline">Proper Rockstar | Digital Madferit</p>
+            </div>
+
+            <div class="link-tree">
+                <a href="https://github.com/manchester-city" target="_blank" class="link-btn">
+                    <i class="fab fa-github"></i> GitHub (Codesmith)
+                </a>
+                <a href="#" target="_blank" class="link-btn">
+                    <i class="fas fa-compact-disc"></i> Portfolio (Gigs & Releases)
+                </a>
+                <a href="#" target="_blank" class="link-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn (Professional Noel-Hater)
+                </a>
+                <a href="#" target="_blank" class="link-btn">
+                    <i class="fab fa-spotify"></i> Spotify (My Essential Playlist)
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
